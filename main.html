@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paper Clip Portfolio</title>
+	<link href="css/mainStyle.css" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<!--navigation-->
+			<div class="hiddenNavigation">
+				<input type="checkbox" id="lSlideMenu" class="hidden-menu-ticker">
+				<label class="btn-menu" for="lSlideMenu">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
+				</label>
+				<div class="leftSlideMenu">	
+					<ul class="navigation">
+						<li class="active"><a href="index.html">About</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="labs.html">Labs</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="col-lg-12 " data-target="#myScrollspy">
+				<div class="col-lg-3 col-md-3 col-sm-3 hb" id="myScrollspy">	
+					<div class="nav" id="myNav">	
+						<img src="img/avatar.jpg" alt="avatar" class="avatar">
+						<ul class="navigation" >
+							<li class="active"><a href="index.html">About</a></li>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="labs.html">Labs</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--navigation-->
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 midBg">
+					<h2>About</h2>
+					<h1>Ferv Anton<b class="dot">.</b></h1>
+					<h3>Freelance Product Designer</h3>
+					<p class="p">Currently curating designs for new
+						startups and founders. Also love 
+						to code in <a href="#">Laravel</a> and <a href="#">Ruby</a></p>
+						<ul class="buttons">
+							<li><a href="#" class="HireMe">Hire me</a></li>
+							<li><a href="#" class="KnowMore">Know more</a></li>
+						</ul>
+
+						<ul class="clients">
+							<li class="Previous">Previous <br>Clients</li>
+							<li class="sl">/</li>
+							<li><a href="#"><i class="ico1"></i></a></li>
+							<li><a href="#"><i class="ico2"></i></a></li>
+							<li><a href="#"><i class="ico3"></i></a></li>
+							<li><a href="#"><i class="ico4"></i></a></li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p class="SJ-aphorism">Stay Hungry. Stay Foolish.</p>
+						
+					</div>
+				</div>
+			</div>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("#myNav").affix({
+						offset: {
+							top: 0
+						}
+					});
+					$(window).resize(function() {
+						var width = $(window).width();
+						if (width < 600){$('.sb').removeClass('inBlk');}
+						if(width > 600){$('.sb').addClass('inBlk');}
+						console.log(width);
+					});
+					$(window).resize();
+				});
+			</script>
+		</body>
+		</html>
