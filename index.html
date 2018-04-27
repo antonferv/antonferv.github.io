@@ -4,166 +4,98 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BS</title>
-
-	<!-- Bootstrap -->
-	
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<!-- Fonts -->
-
+	<title>Paper Clip Portfolio</title>
+	<link href="css/mainStyle.css" rel="stylesheet">
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">PR<i class="fa fa-circle"></i>GER</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Hdddddome</a></li>
-					<li><a href="#">Hoddme</a></li>
-					<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>	
-	<div class="headerWrap">
-		<div class="container">
-			<div class="row center">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h1>Bootstrap is awesome!</h1>
-					<h2>Сайты на Bootstrap отличные!</h2>
-				</div> 	
-			</div>
-		</div>
-	</div>
-	<div class="container w">
-		<div class="row center">
-			<br>
-			<br>
-			<div class="col-lg-4">
-				<i class="fa fa-heart"></i>
-				<h4>Design</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore officiis obcaecati fuga nobis cum neque magni laudantium autem consequuntur, delectus nostrum maxime voluptas accusamus animi, ipsa ipsum blanditiis! Accusantium at, magni reprehenderit nobis maxime inventore repudiandae, saepe tenetur impedit eligendi est sit deserunt rerum, nesciunt temporibus pariatur earum quam. Libero architecto quisquam eum iusto soluta nobis odio ducimus, culpa alias quis dicta recusandae laboriosam, magnam veniam beatae ut at omnis reiciendis, animi officia quo eius. Explicabo voluptate eligendi earum fugiat, incidunt sit commodi, architecto corporis excepturi unde ut maiores, porro nostrum fuga. Quis, error! Magni maiores quas rem voluptatem!</p>
-			</div>
 
-			<div class="col-lg-4">
-				<i class="fa fa-laptop"></i>
-				<h4>Design</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore officiis obcaecati fuga nobis cum neque magni laudantium autem consequuntur, delectus nostrum maxime voluptas accusamus animi, ipsa ipsum blanditiis! Accusantium at, magni reprehenderit nobis maxime invenlpa alias quis dicta recusandae laboriosam, magnam veniam beatae ut at omnis reiciendis, animi officia quo eius. Explicabo voluptate eligendi earum fugiat, incidunt sit commodi, architecto corporis excepturi unde ut maiores, porro nostrum fuga. Quis, error! Magni maiores quas rem voluptatem!</p>
-			</div>
-
-			<div class="col-lg-4">
-				<i class="fa fa-trophy"></i>
-				<h4>Design</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore officiis obcaecati fuga nobis cum neque magni laudantium autem consequuntur, delectus nostrum maxime voluptas accusamus animi, ipsa ipsum blanditiis! Accusantium at, magni reprehenderit nobis maxime  sit commodi, architecto corporis excepturi unde ut maiores, porro nostrum fuga. Quis, error! Magni maiores quas rem voluptatem!</p>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<div class="darkBackground">
-		<div class="row center">
-			<h4>Last Works</h4>
-			<br>
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="img/p01.png"></a>
+	<div class="container">
+		<div class="row">
+			<!--navigation-->
+			<div class="hiddenNavigation">
+				<input type="checkbox" id="lSlideMenu" class="hidden-menu-ticker">
+				<label class="btn-menu" for="lSlideMenu">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
+				</label>
+				<div class="leftSlideMenu">	
+					<ul class="navigation">
+						<li class="active"><a href="index.html">About</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="labs.html">Labs</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>	
 				</div>
 			</div>
+			<div class="col-lg-12 " data-target="#myScrollspy">
+				<div class="col-lg-3 col-md-3 col-sm-3 hb" id="myScrollspy">	
+					<div class="nav" id="myNav">	
+						<img src="img/avatar.jpg" alt="avatar" class="avatar">
+						<ul class="navigation" >
+							<li class="active"><a href="index.html">About</a></li>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="labs.html">Labs</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
 
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="img/p02.png"></a>
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--navigation-->
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 midBg">
+					<h2>About</h2>
+					<h1>Ferv Anton<b class="dot">.</b></h1>
+					<h3>Freelance Product Designer</h3>
+					<p class="p">Currently curating designs for new
+						startups and founders. Also love 
+						to code in <a href="#">Laravel</a> and <a href="#">Ruby</a></p>
+						<ul class="buttons">
+							<li><a href="#" class="HireMe">Hire me</a></li>
+							<li><a href="#" class="KnowMore">Know more</a></li>
+						</ul>
+
+						<ul class="clients">
+							<li class="Previous">Previous <br>Clients</li>
+							<li class="sl">/</li>
+							<li><a href="#"><i class="ico1"></i></a></li>
+							<li><a href="#"><i class="ico2"></i></a></li>
+							<li><a href="#"><i class="ico3"></i></a></li>
+							<li><a href="#"><i class="ico4"></i></a></li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p class="SJ-aphorism">Stay Hungry. Stay Foolish.</p>
+						
+					</div>
 				</div>
 			</div>
-
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="img/p03.png"></a>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<div class="container whiteBg">
-		<div class="row center">
-			<br>
-			<br>
-			<div class="col-lg-8 col-lg-offset-2">
-				<h4>We create sites</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est consequatur, cum provident doloremque, delectus distinctio quia, consectetur illo maxime totam adipisci. Architecto odit adipisci cupiditate mollitia iure ullam eaque ipsam repellat molestias deserunt laborum, reiciendis sed necessitatibus minima dignissimos iusto, eum quas eius! Veritatis tempore placeat dolor possimus. Eaque voluptate sed dolor molestias, veniam rem excepturi fuga esse velit non tempore doloremque quia nobis beatae ipsa odit, maxime ad deserunt eum quasi autem adipisci, ab officiis, qui! Voluptate veritatis itaque doloribus quia nisi delectus quibusdam non, enim rem suscipit in totam vel deleniti aliquid corporis amet, eligendi ut asperiores!</p>
-			<p><br><br></p>
-			</div>
-			<div class="col-lg-2">
-				
-			</div>
-			<div class="col-lg-10 col-lg-offset-1">
-				<img src="img/munter.png" alt="" class="img-responsive">
-			</div>
-		</div>
-	</div>
-	<div class="partners">
-		<div class="container">
-			<div class="row center">
-				<h4>Parthers</h4>
-				<div class="col-lg-2 col-lg-offset-1">
-					<img src="img/c01.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="img/c02.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="img/c03.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="img/c04.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="img/c05.gif" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="red">
-		<div class="container">
-			<div class="row center">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repellat neque, quos nemo. Ipsum, porro odio quaerat totam, veniam ut consequatur nihil. Cumque distinctio, aspernatur nemo vel magni neque? Tenetur accusantium distinctio iusto repellendus dignissimos placeat, dolorum assumenda possimus eum, nostrum velit deserunt dolor nobis quas, excepturi sapiente, aliquam sed.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="row center">
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-vk"></i></a>
-			</div>
-		</div>
-	</div>
-
-
-	
-
-
-
-
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("#myNav").affix({
+						offset: {
+							top: 0
+						}
+					});
+					$(window).resize(function() {
+						var width = $(window).width();
+						if (width < 600){$('.sb').removeClass('inBlk');}
+						if(width > 600){$('.sb').addClass('inBlk');}
+						console.log(width);
+					});
+					$(window).resize();
+				});
+			</script>
+		</body>
+		</html>
