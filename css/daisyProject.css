@@ -843,6 +843,7 @@ hr{
 .navMenu{
  border: 1px solid #99c50a;
  outline:none;
+ margin-right: 7px;
 }
 .button_loginTop{
   margin-right: 5px;
