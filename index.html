@@ -63,6 +63,35 @@
 		</div>
 		<span class="typed-cursor">|</span>
 	</header>
+	<aside>
+		<div class="contactButton">
+			<i class="contactIco js-contactIco"></i>
+		</div>
+		<div class="fixedBlock">
+			<form action="https://docs.google.com/forms/d/e/1FAIpQLSdaJypuIHNkp9U0fhkXhY2yS3fI587-yX8YXL-JOWhz3ZlM9g/formResponse"
+			target="_self" method="POST" id="mG61Hd" class="stForm">
+			<div class="stForm__header">
+				<h5 class="stForm__h5">Написать письмо</h5>
+				<i class="closeIco js-closeIco"></i>
+			</div>
+			<br>
+			<br>
+			<label class="stForm__label" for="entry.1468701897">Ваше имя</label><br>
+			<input class="stForm__input" type="text" name="entry.1468701897" required value="">
+			<br>
+			<br>
+			<label class="stForm__label" for="entry.829021582">Ваш e-mail</label><br>
+			<input class="stForm__input" type="email" name="entry.829021582" required value="">
+			<br>
+			<br>
+			<label class="stForm__label" for="entry.1433381552">Сообщение</label><br>
+			<textarea class="stForm__text" name="entry.1433381552" required value=""></textarea>
+			<br>
+			<br>
+			<input class="stForm__button" type="submit" value="Отправить">
+		</form>
+	</div>
+	</aside>
 	<article id="portfolio">
 		<div class="pF">
 			<h2 class="pF__h2">Примеры моих работ</h2>
@@ -178,6 +207,13 @@ $(document).ready(function(){
     startDelay: 1000,
     loop: false
     });
+    $(".js-contactIco").on("click", function(e){
+		$(".fixedBlock").fadeIn(500);
+	});
+	$(".js-closeIco").on("click", function(e){
+		$(".fixedBlock").fadeOut(500);
+	});
+
 
 });
 </script>
