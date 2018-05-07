@@ -780,7 +780,7 @@ hr{
   line-height: 1.2;
   font-weight: 600;
   float: right;
-  padding-right: 1.0666rem;
+  padding-right: 1.6rem;
   text-decoration: none;
 }
 .blockProject__details::after{
@@ -1198,7 +1198,7 @@ hr{
   border-bottom: 1px solid #ccc;
 }
 .tabs .flex-tabs .tab {
-  max-height: 77px;
+  max-height: 90px;
 }
 .bxslider__item{
   height: 400px;
@@ -1314,7 +1314,7 @@ hr{
     display: none;
   }
   .blockProject__details::after{
-    bottom: -0.1rem;
+    bottom: -0.2rem;
   }
 }
 /*media*/
