@@ -25,3 +25,6 @@
 :root .flexBlk {
     display:none;
 }
+:root .brand {
+    margin-bottom: 25px;
+}
