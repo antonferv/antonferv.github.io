@@ -178,7 +178,8 @@ img{
 }
 .scrollImage, 
 .scrollImage1, 
-.scrollImage2{
+.scrollImage2,
+.scrollImage3{
 	position: relative;
 	top: 0;
 	-webkit-transition: top .9s ease-in;
@@ -195,6 +196,9 @@ img{
 }
 .scrollImage2:hover{
 	top: -360px;
+}
+.scrollImage3:hover{
+	top: -540px;
 }
 .portfolioItem__detailed{
 	width: -webkit-calc(100% - 5px);
