@@ -307,6 +307,9 @@ img{
     bottom: 0;
     display: block;
 	}
+	.numPos{
+		right: -21px;
+	}
 	.item__text{
 		font-size: 1.241rem;
 		color: #000;
