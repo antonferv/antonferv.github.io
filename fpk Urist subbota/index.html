@@ -526,40 +526,40 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 </div>
 </section>
 <section class="mapBlock">
-<svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
   <polygon fill="#ebebeb" points="2248,121 0,0 2248,0 "/>
 </svg>
-  <div class="blockPosition">
+<div class="blockPosition">
 
-    <div class="mapBlock_ins">
-      <div class="mapBlock_insL">
-        <div class="mapBlock__info">
-          <h3 class="mapBlock__h3">Скачать<br> инструкцию</h3>
-          <span class="mapBlock__span">по защите счета от блокировки</span>
+  <div class="mapBlock_ins">
+    <div class="mapBlock_insL">
+      <div class="mapBlock__info">
+        <h3 class="mapBlock__h3">Скачать<br> инструкцию</h3>
+        <span class="mapBlock__span">по защите счета от блокировки</span>
 
-        </div>
-        <div class="flex">
-          <input type="text" class="mapBlock__input" placeholder="неактивная строка">
-          <input type="button" class="btn_orange btn_orangeStart mt35" value="Отправить">
-        </div>
       </div>
-
-      <div class="mapBlock__image">
-        <img src="img/Paper-min.png" alt="paper">
+      <div class="flex">
+        <input type="text" class="mapBlock__input" placeholder="неактивная строка">
+        <input type="button" class="btn_orange btn_orangeStart mt35" value="Отправить">
       </div>
+    </div>
 
+    <div class="mapBlock__image">
+      <img src="img/Paper-min.png" alt="paper">
     </div>
 
   </div>
-  <div class="SkewBlock1064"></div>
-  <div class="googleMap">
-    <div  id="google-map"></div>
-  </div>
 
-  <svg version="1.1" class="svgBlack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 2248 320" enable-background="new 0 0 2248 320" xml:space="preserve">
-  <polygon points="2248,320 2248,131.1 0,0 0,320 "/>
+</div>
+<div class="SkewBlock1064"></div>
+<div class="googleMap">
+  <div  id="google-map"></div>
+</div>
+
+<svg version="1.1" class="svgBlack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 2248 320" enable-background="new 0 0 2248 320" xml:space="preserve">
+<polygon points="2248,320 2248,131.1 0,0 0,320 "/>
 </svg>
 
 
@@ -599,11 +599,11 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
         <div class="col-12 col-sm-4">
           <ul class="footer__vacancies">
             <li><h5>Вакансии</h5></li>
-            <li>IT-специалист</li>
-            <li>Бухгалтер</li>
-            <li>Дизайнер</li>
-            <li>Кофе-мен</li>
-            <li>Юрист</li>
+            <li><a href="#">IT-специалист</a></li>
+            <li><a href="#">Бухгалтер</a></li>
+            <li><a href="#">Дизайнер</a></li>
+            <li><a href="#">Кофе-мен</a></li>
+            <li><a href="#">Юрист</a></li>
           </ul>
         </div>
       </div>
@@ -615,9 +615,9 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 <script src="slick/slick.min.js"></script>
 <script>
  $(document).on('ready', function() {
-$(".phone_header").click(function(){
-$(".hint").toggle();
-});
+  $(".phone_header").click(function(){
+    $(".hint").toggle();
+  });
 
 
   $(".regular").slick({
@@ -646,9 +646,9 @@ $(".hint").toggle();
   breakpoint: 525,
   settings: {
     slidesToShow: 1,
-   centerMode: true,
-centerPadding: '150',
- }
+    centerMode: true,
+    centerPadding: '150',
+  }
 }
 
 ]
@@ -825,8 +825,13 @@ var myMap= new google.maps.Map(googleMap,options);
 
 var marker=new google.maps.Marker({
  position:{lat:56.8361577,lng:60.614234},
- map:myMap
+ map:myMap,
+ icon:'img/marker.png'
 });
+// var InfoWindow = new google.maps.InfoWindow({
+ 
+// });
+// InfoWindow.open(myMap, marker);
 
 
 

@@ -297,15 +297,15 @@ img{
 		margin-top: 25px;
 	}
 	.item__number {
-		font-size:11.6875rem;
-		font-family: 'Helvetica Neue';
-		color: rgb(244, 244, 244);
-		font-weight: bold;
-		line-height: 1.2;
-		position: absolute;
-		right: 15px;
-		bottom: 0;
-		height: 177px;
+		font-size: 11.6875rem;
+    font-family: 'Helvetica Neue';
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    line-height: 0.8;
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    display: block;
 	}
 	.item__text{
 		font-size: 1.241rem;
@@ -883,6 +883,13 @@ img{
 		color:#fff;
 		font-family: 'Helvetica Neue';
 	}
+	.footer__vacancies a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.footer__vacancies a:hover{
+		text-decoration: underline;
+	}
 	footer h5 {
 		font-size: 24px;
 		font-family: 'Helvetica Neue';
@@ -970,7 +977,12 @@ img{
 			position: absolute;
 			top: 90%;
 		}
-
+#google-map {
+    height: 600px;
+}
+.googleMap {
+    height: 550px;
+}
 		html{
 			font-size: 85%;
 		}
