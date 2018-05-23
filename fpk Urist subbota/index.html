@@ -35,6 +35,11 @@
          </div>
          <div class="topHead__Right">
           <a href="#" class="btn_In btn">Войти</a>
+          <i class="phone_header"></i>
+          <div class="hint">
+            <span>+7 (343) 379-58-79</span><br>
+            <span>8 (800) 707-58-79</span>
+          </div>
         </div>		
       </div>
     </div>
@@ -610,7 +615,9 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 <script src="slick/slick.min.js"></script>
 <script>
  $(document).on('ready', function() {
-
+$(".phone_header").click(function(){
+$(".hint").toggle();
+});
 
 
   $(".regular").slick({
@@ -629,17 +636,18 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
    }
  },
  {
-  breakpoint: 800,
+  breakpoint: 1000,
   settings: {
    slidesToShow: 1,
    slidesToScroll: 1
  }
 },
 {
-  breakpoint: 340,
+  breakpoint: 525,
   settings: {
-   slidesToShow: 0,
-   slidesToScroll: 1
+    slidesToShow: 1,
+   centerMode: true,
+centerPadding: '150',
  }
 }
 
