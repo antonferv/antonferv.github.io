@@ -696,7 +696,7 @@ img{
 		line-height: 1.2;
 		text-align: left;
 		padding-left: 40px;
-		flex-shrink: 2;
+		flex-shrink: 3;
 	}
 	.avatar__name{
 		font-size:1.125rem;
