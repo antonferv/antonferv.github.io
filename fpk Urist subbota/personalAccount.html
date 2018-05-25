@@ -83,13 +83,13 @@
           <div class="col-12 np gS2">
             <div class="__bonus">
               <p>Бонус</p>
-              <span>1348 руб.</span>           
+              <span class="priceW">1348 руб.</span>           
             </div>
           </div>
           <div class="col-12 np JSCheckWidth gS2">
             <div class="__resAmount">
-              <p>остаток</p>
-              <span class="black">22 555 руб.</span>           
+              <p>Остаток</p>
+              <span class="black priceW">22 640 руб.</span>           
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
                 <th>Дата</th>
                 <th class="sericesT">Услуга</th>
                 <th class="textAlignRight">Стоимость(р)</th>
-                <th class="textAlignRight">Внесеноостаток(р)</th>
+                <th class="textAlignRight">Внесено/остаток(р)</th>
                 <th class="textAlignRight">Бонус(р)</th>
                 <th class="textAlignLeft">Документы</th>
               </tr>
@@ -145,6 +145,53 @@
     </div>
   </div>
 </main>
+<aside>
+  <!-- добавить услугу --><!-- добавить услугу --><!-- добавить услугу -->
+  <div class="popUp popUp_addServices">
+    <div class="container">
+      <div class="positionPopUp">
+        <div class="popUpFlex">
+          <i class="closeIco"></i>
+          <div class="popUp__img">
+            <img src="img/pen90.png" alt="regImg">
+            <h3 class="popUp__h3 popUp__h3_pad">Услуга<br></h3>
+            <span class="pb50">оказанная ООО «фпк ЮриСТ»</span>
+          </div>
+          <div class="flexRow">
+            <input type="text" class="popUp__input" placeholder="№">
+            <div class="w5"></div>
+            <input type="text" class="popUp__input" id="date" placeholder="дд.мм.гггг" spellcheck="false">
+            <div class="w5"></div>
+            <input type="text" class="popUp__input" placeholder="Бонус, р">
+          </div>
+          <div class="flexRow">
+            <input type="text" class="popUp__input" placeholder="Название услуги">
+          </div>
+          <div class="flexRow">
+            <input type="text" class="popUp__input" placeholder="Стоимость, р">
+            <div class="w5"></div>
+            <input type="text" class="popUp__input" placeholder="Внесено, р">
+            <div class="w5"></div>
+            <input type="text" class="popUp__input" placeholder="Остаток, р">
+          </div>
+          <div class="flexRow flexCol">
+              <div class="flexRow order2">
+                <div class="fileform">
+                  <div class="selectbutton__App">Прикрепить файл</div>
+                  <input id="upload" type="file" placeholder="Прикрепить файл" name="uploadAcc" class="fileAcc">
+                </div>
+                <p class="mr10">pdf, doc, jpeg</p>
+              </div>
+            <div class="w5"></div>
+            <input type="text" class="popUp__input order1" placeholder="Название (отчет, договор)">
+          </div>
+          <input type="button" class="popUp__btn" value="Добавить">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- добавить услугу --><!-- добавить услугу --><!-- добавить услугу -->
+</aside>
 <footer><!-- footer 2 -->
   <svg version="1.1" class="svgBlack_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2248 160" enable-background="new 0 0 2248 160" xml:space="preserve">
     <polygon points="2248,160 2248,131.1 0,0 0,160 "></polygon>
@@ -196,6 +243,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script>
 <script src="slick/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/mainFPK.js"></script>
 </body>
 </html>

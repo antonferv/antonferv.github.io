@@ -1,10 +1,10 @@
 $(document).on('ready', function() {
 
   $(".JsAutorization").click(function(){
-    $(".popUp_Reg").css({"display":"block"});
+    $(".popupIn").css({"display":"block"});
   });
   $(".closeIco").click(function(){
-    $(".popUp_Reg").css({"display":"none"});
+    $(".popupIn").css({"display":"none"});
   });
   
   $("._Rec").click(function(){
@@ -19,12 +19,22 @@ $(document).on('ready', function() {
   $(".closeIco").click(function(){
     $(".popUp_App").css({"display":"none"});
   });
-  // $("._Reg").click(function(){
-  //   $(".popUp_App").css({"display":"block"});
-  // });
-  // $(".closeIco").click(function(){
-  //   $(".popUp_App").css({"display":"none"});
-  // });
+  $("._Reg").click(function(){
+    $("._RegPopUp").css({"display":"block"});
+    $(".popupIn").css({"display":"none"});
+  });
+  $(".closeIco").click(function(){
+    $("._RegPopUp").css({"display":"none"});
+  });
+  $(".addServicesIco").click(function(){
+    $(".popUp_addServices").css({"display":"block"});
+  });
+  $(".closeIco").click(function(){
+    $(".popUp_addServices").css({"display":"none"});
+  });
+  $(function(){
+    $("#date").mask("99.99.9999",{placeholder: "дд.мм.гггг"});
+  });
   $(window).resize(function() {
     var width = $(window).width();
     if (width < 993){

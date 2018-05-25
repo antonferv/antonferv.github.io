@@ -112,7 +112,7 @@
   <svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
   <polygon fill="#FFFFFF" points="2248,121 0,0 2248,0 "/>
-  </svg>
+</svg>
 <div class="container">
   <div class="row justify-content-center"> 			    	
    <div class="col-12 col-sm-6 col-lg-4">
@@ -522,8 +522,8 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
           <h3 class="popUp__h3">Восстановление пароля</h3>
           <span>Введите E-mail или телефон, который вы указали при регистрации, на него будет выслан новый пароль.</span>
         </div>
-        <input type="text" class="popUp__input" placeholder="E-mail" name="E-mailRec">
-        <input type="text" class="popUp__input" placeholder="Телефон" name="PhoneRec">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail" name="E-mailRec">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="Телефон" name="PhoneRec">
         <input type="button" class="popUp__btn bl" value="Сбросить пароль">
       </div>
     </div>
@@ -531,7 +531,7 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 </div>
 <!-- Восстановление пароля -->
 <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
-<div class="popUp _Reg"><style>._Reg{display: block;}</style>
+<div class="popUp _RegPopUp">
   <div class="container">
     <div class="positionPopUp">
       <div class="popUpFlex">
@@ -541,24 +541,33 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
           <h3 class="popUp__h3">Регистрация</h3>
         </div>
         <div class="flexRow">
-          <input type="text" class="popUp__input" placeholder="Фамилия" name="patronomic">
-          <input type="text" class="popUp__input" placeholder="Имя" name="nameUser">
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Фамилия" name="patronomic">
+          <div class="w5"></div>
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Имя" name="nameUser">
         </div>
         <div class="flexRow">
-          <input type="text" class="popUp__input" placeholder="E-mail">
-          <div class="file">
-          <div class="fileform">
-            <div class="selectbutton__App">Прикрепить файл</div>
-            <input id="upload" type="file" placeholder="Прикрепить файл" name="uploadAcc" class="fileAcc">
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Название организации">
+          <div class="w5"></div>
+          <div class="shrink">
+            <div class="shellFileFoto">
+              <div class="selectbutton__Foto">
+              <div class="flexContainer">
+                <div class="loadImageIco">
+                <img src="img/reg.png" alt="ava">   
+                </div>
+                <p>Загрузить фото</p>
+              </div>
+              </div>
+              <input id="uploadFoto" type="file" name="uploadFoto" class="fileFoto">
+            </div>
           </div>
-          <p class="fileAcc__text">pdf, doc, jpeg</p>
-        </div>
         </div>
         <div class="flexRow">
-          <input type="text" class="popUp__input" placeholder="Телефон">
-          <input type="text" class="popUp__input" placeholder="Сайт">
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Телефон">
+          <div class="w5"></div>
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Сайт">
         </div>
-        <input type="button" class="popUp__btn" value="Войти">
+        <input type="button" class="popUp__btn" value="Регистрация">
         <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="#">Политика обработки и хранения персональных данных</a></small></span>
       </div>
     </div>
@@ -566,7 +575,7 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 </div>
 <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
 <!-- IN POPUP -->
-<div class="popUp popUp_Reg">
+<div class="popUp popupIn">
   <div class="container">
     <div class="positionPopUp">
       <div class="popUpFlex">
@@ -575,8 +584,8 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
           <img src="img/reg.png" alt="regImg">
           <h3 class="popUp__h3">Вход</h3>
         </div>
-        <input type="text" class="popUp__input" placeholder="E-mail">
-        <input type="text" class="popUp__input" placeholder="Пароль">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="Пароль">
         <input type="button" class="popUp__btn" value="Войти">
         <a href="#" class="popUp__link _Rec">Забыли пароль?</a>
         <a href="#" class="popUp__link _Reg">Регистрация</a>
@@ -608,11 +617,11 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
         <input type="button" class="popUp__btn popUp__btn_orange" value="Отправить">
         <div class="checkboxWrapper">
           <div class="shellCheckbox">
-          <label class="checkbox">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-        </div>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
           <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="#">Политика обработки и хранения персональных данных</a></small></span>
         </div> 
       </div>
@@ -701,6 +710,7 @@ viewBox="0 0 2248 320" enable-background="new 0 0 2248 320" xml:space="preserve"
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script>
 <script src="slick/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/mainFPK.js"></script>
 <script src="js/googleMap.js"></script>
 </body>
