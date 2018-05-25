@@ -1,5 +1,8 @@
 $(document).on('ready', function() {
-
+$('.btn_orange ').click(function (e) {
+    e.preventDefault()
+    /*dome code here*/       
+});
   $(".JsAutorization").click(function(){
     $(".popupIn").css({"display":"block"});
   });
