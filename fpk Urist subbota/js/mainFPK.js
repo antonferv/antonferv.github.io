@@ -1,3 +1,16 @@
+$(".JSAnimPlaceholder").change(function() {
+  if($(this).val())
+    $(this).addClass("has_value");
+  else
+    $(this).removeClass("has_value");
+});
+$(function(){
+  $(".play").click(function(){
+    var dataYt=$(this).parents(".wrapperVideo").attr("data-youtube");
+    console.log(dataYt);
+    $(this).parents(".wrapperVideo").html('<iframe src="https://www.youtube.com/embed/'+ dataYt +'?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+  });
+});
 $(document).on('ready', function() {
 $('.btn_orange ').click(function (e) {
     e.preventDefault()

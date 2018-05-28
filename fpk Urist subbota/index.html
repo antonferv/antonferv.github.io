@@ -23,15 +23,18 @@
       <!-- headerMain -->
       <div class="wrapperShell">
         <header>
-         <div class="header">
+         <div class="bgHeader_white">
           <div class="container">
            <div class="row">
             <div class="col-12 topHead">
              <div class="topHead__Left">
               <ul class="topHead__logo">
                <li><img src="img/logo-min.png" alt="logo"></li>
+               <li><a href="#">Услуги</a></li>
+               <li><a href="articels.html">События</a></li>
                <li><span>+7 (343) 379-58-79</span></li>
                <li><span>8 (800) 707-58-79</span></li>
+               <li><a>info@fpkurist.ru</a></li>
              </ul>
            </div>
            <div class="topHead__Right">
@@ -40,9 +43,13 @@
             <div class="hint">
               <span>8 (800) 707-58-79</span>
             </div>
-          </div>		
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="container">
       <div class="row">
         <div class="col-12 orderBlock">
          <h1 class="orderBlock__h1">Надежный<br>бухгалтерский<br>и правовой<br>документооборот</h1>
@@ -51,13 +58,14 @@
      </div>
    </div>
  </div>
+
 </header>    <!-- headerMain -->
 <section class="blockAbout"><!-- section -->
  <div class="container">
   <div class="row">
    <div class="col-12 col-md-6 blockAbout__video">
     <div class="Video">
-     <div class="wrapperVideo" data-youtube="#">
+     <div class="wrapperVideo" data-youtube="R53yMjH5suU">
       <button class="videoPlay play" type="button"></button>
     </div>
   </div>
@@ -546,17 +554,24 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
           <input type="text" class="popUp__input popUp__input_Reg" placeholder="Имя" name="nameUser">
         </div>
         <div class="flexRow">
-          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Название организации">
+          <div class="animationTopLabel">
+            <input type="text" class="popUp__input popUp__input_Reg JSAnimPlaceholder" id="NameOrganization">
+            <label for="NameOrganization">
+              <span>Название организации</span>
+            </label>
+          </div>
+          
+
           <div class="w5"></div>
           <div class="shrink">
             <div class="shellFileFoto">
               <div class="selectbutton__Foto">
-              <div class="flexContainer">
-                <div class="loadImageIco">
-                <img src="img/reg.png" alt="ava">   
+                <div class="flexContainer">
+                  <div class="loadImageIco">
+                    <img src="img/reg.png" alt="ava">   
+                  </div>
+                  <p>Загрузить фото</p>
                 </div>
-                <p>Загрузить фото</p>
-              </div>
               </div>
               <input id="uploadFoto" type="file" name="uploadFoto" class="fileFoto">
             </div>
