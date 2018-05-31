@@ -78,11 +78,20 @@ function changeView(){
     $(".grey").css({"background-color":"#ebebeb"});
   });
   $(".masonry").click(function(){
-   $(".eventsBlock__item").css({"min-height":"380px","display":"block","align-items":"normal","justify-content":"normal","padding":"0 0"});
+  $(".eventsBlock__item").css({"min-height":"380px","display":"block","align-items":"normal","justify-content":"normal","padding":"0 0"});
    $(".b, .a").css({"position":"absolute","bottom":"10px","left":"10px"});
    $(".hover").addClass("col-md-6 col-lg-3");
-   $(".event__date").css({"display":"block"});$(".event__img").css({"display":"flex"});
+    $(".event__date").css({"display":"block"});$(".event__img").css({"display":"block"});
+    $(".event__date").css({"display":"block"});
+if(navigator.userAgent.search(/IE/)>0){
+$(".event__img").css({"display":"block"});
+   }
+    else{      
+$(".event__img").css({"display":"flex"});
+   };
+    
    $(".grey").css({"background-color":"#fff"});
+   
    $(".event__img").each(function(){
     $(this).parent(".eventsBlock__item").find(".b").appendTo($(this));
     $(this).parent(".eventsBlock__item").find(".a").appendTo($(this));
@@ -101,7 +110,7 @@ $(".regular").slick({
  centerMode: true,
  responsive: [
  {
-  breakpoint: 1450,
+  breakpoint: 1770,
   settings: {
    slidesToShow: 2,
    slidesToScroll: 1,

@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5,h6{
 .item__H2{
 	font-size: 3.75rem;
 	text-align: center;
-	padding-top: 120px;
+	/*padding-top: 120px;*/
 	padding-bottom: 55px;
 }
 ul{
@@ -82,6 +82,10 @@ img{
 .bgHeader_white{
 	background-color: #fcfcfc;
 }
+.phoneMgo{
+	color: black;
+	text-decoration: none;
+}
 .phone_header{
 	display: block;
 	position: absolute;
@@ -93,7 +97,7 @@ img{
 	left: -32px;
 }
 .topHead__logo li{
-	font-size: 16.919px;
+	font-size: 1.2rem;
 	color: rgb(35, 31, 32);
 	font-weight: bold;
 	line-height: 1.2;
@@ -1770,7 +1774,7 @@ thead tr th{
 	background: url(../img/close.png) no-repeat center center;
 	width: 20px;
 	height: 22px;
-	top: 0;
+	top: 25px;
 	right: 0;
 	cursor: pointer;
 }
@@ -2469,6 +2473,13 @@ thead tr th{
 	html{
 		font-size: 80%;
 	}
+	.phone_header {
+		display: block;
+	}
+	.topHead__logo li span,
+	.topHead__link{
+		display: none;
+	}
 	.wrapperVideo {
 		height: 238px;
 		bottom: 30px;
@@ -2578,6 +2589,9 @@ thead tr th{
 }	
 @media(max-width: 660px){
 	.mapBlock__image{
+		display: none;
+	}
+	.servicesBlock_Img:before {
 		display: none;
 	}
 	.mapBlock_insL {
@@ -2920,3 +2934,13 @@ thead tr th{
 		height: 100px;
 	}
 }
+/*@media all and (-ms-high-contrast:none)
+{
+	.svgShape1,.svgBlack_footer{display: none;}
+	.svgShape3{display: none;}
+	.svgBlack{display: none;}
+	footer{padding-top: 55px;}
+	.googleMap{bottom:0;}
+	#google-map{height: 730px;bottom: 0;}
+	.event__img,.review__avatar{display: block;}
+}*/
