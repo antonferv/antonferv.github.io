@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="simple bs4">
-	<meta name="author" content="Anton Ferv">
+	<meta name="description" content="ФПК ЮриСТ - Статьи">
+	<meta name="author" content="">
+	<meta name="keywords" content="ФПК ЮриСТ, статьи, мероприятия, новости юридических услуг" />
 	<link rel="icon" href="favicon.ico">
-	<title>фпк Юрист - Статьи</title>
+	<title>ФПК ЮриСТ - Статьи</title>
 	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="slick/slick.css">
@@ -20,6 +21,94 @@
       <!--[if lte IE 10]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
     </head>
     <body>
+      <!-- Восстановление пароля -->
+<div class="popUp popUp_passRec">
+  <div class="container">
+    <div class="positionPopUp">
+      <div class="popUpFlex">
+        <i class="closeIco"></i>
+        <div class="popUp__img">
+          <img src="img/shield.png" alt="regImg">
+          <h3 class="popUp__h3">Восстановление пароля</h3>
+          <span>Введите E-mail или телефон, который вы указали при регистрации, на него будет выслан новый пароль.</span>
+        </div>
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail" name="E-mailRec">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="Телефон" name="PhoneRec">
+        <input type="button" class="popUp__btn bl" value="Сбросить пароль">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Восстановление пароля -->
+<!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
+<div class="popUp _RegPopUp">
+  <div class="container">
+    <div class="positionPopUp">
+      <div class="popUpFlex">
+        <i class="closeIco"></i>
+        <div class="popUp__img">
+          <img src="img/reg.png" alt="regImg">
+          <h3 class="popUp__h3">Регистрация</h3>
+        </div>
+        <div class="flexRow">
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Фамилия" name="patronomic">
+          <div class="w5"></div>
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Имя" name="nameUser">
+        </div>
+        <div class="flexRow">
+          <div class="animationTopLabel">
+            <input type="text" class="popUp__input popUp__input_Reg JSAnimPlaceholder" id="NameOrganization">
+            <label for="NameOrganization">
+              <span>Название организации</span>
+            </label>
+          </div>
+          <div class="w5"></div>
+          <div class="shrink">
+            <div class="shellFileFoto">
+              <div class="selectbutton__Foto">
+                <div class="flexContainer">
+                  <div class="loadImageIco">
+                    <img src="img/reg.png" alt="ava">   
+                  </div>
+                  <p>Загрузить фото</p>
+                </div>
+              </div>
+              <input id="uploadFoto" type="file" name="uploadFoto" class="fileFoto">
+            </div>
+          </div>
+        </div>
+        <div class="flexRow">
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Телефон">
+          <div class="w5"></div>
+          <input type="text" class="popUp__input popUp__input_Reg" placeholder="Сайт">
+        </div>
+        <input type="button" class="popUp__btn" value="Регистрация">
+        <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="#">Политика обработки и хранения персональных данных</a></small></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
+<!-- IN POPUP -->
+<div class="popUp popupIn">
+  <div class="container">
+    <div class="positionPopUp">
+      <div class="popUpFlex">
+        <i class="closeIco"></i>
+        <div class="popUp__img">
+          <img src="img/reg.png" alt="regImg">
+          <h3 class="popUp__h3">Вход</h3>
+        </div>
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail">
+        <input type="text" class="popUp__input popUp__input_mw" placeholder="Пароль">
+        <input type="button" class="popUp__btn" value="Войти">
+        <a href="#" class="popUp__link _Rec">Забыли пароль?</a>
+        <a href="#" class="popUp__link _Reg">Регистрация</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- IN POPUP -->
      <div class="wrapperShell">
       <header><!-- header-Articles -->
        <div class="header_articles">
@@ -33,14 +122,14 @@
              <li><a href="#"  class="topHead__link">События</a></li>
              <li><span>+7 (343) 379-58-79</span></li>
              <li><span>8 (800) 707-58-79</span></li>
-             <li><a  class="topHead__link">info@fpkurist.ru</a></li>
+             <li><a href="mailto:info@fpkurist.ru">info@fpkurist.ru</a><a class="topHead__link"></a></li>
            </ul>
          </div>
          <div class="topHead__Right">
           <a href="#" class="btn_In btn JsAutorization">Войти</a>
           <i class="phone_header"></i>
           <div class="hint">
-            <span>8 (800) 707-58-79</span>
+            <span><a href="tel:+8 (800) 707 58 79" class="phoneMgo" >8 (800) 707-58-79</a></span>
           </div>
         </div>		
       </div>
@@ -196,26 +285,7 @@
 </div>
 </div>
 </section>
-<!-- IN POPUP -->
-<div class="popUp popupIn">
-  <div class="container">
-    <div class="positionPopUp">
-      <div class="popUpFlex">
-        <i class="closeIco"></i>
-        <div class="popUp__img">
-          <img src="img/reg.png" alt="regImg">
-          <h3 class="popUp__h3">Вход</h3>
-        </div>
-        <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail">
-        <input type="text" class="popUp__input popUp__input_mw" placeholder="Пароль">
-        <input type="button" class="popUp__btn" value="Войти">
-        <a href="#" class="popUp__link _Rec">Забыли пароль?</a>
-        <a href="#" class="popUp__link _Reg">Регистрация</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- IN POPUP -->
+
 </main>
 <!-- footer 2 -->
 <footer>
@@ -267,7 +337,7 @@
   </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script> -->
 <script src="slick/slick.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/mainFPK.js"></script>
