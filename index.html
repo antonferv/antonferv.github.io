@@ -231,12 +231,12 @@ $(document).ready(function(){
 		top=$(id).offset().top-45;
 		$("body,html").animate({scrollTop:top},700);
 	});
-	// var typed = new Typed('.gT', {
-	// 	stringsElement:'.me',
- //    typeSpeed:0,
- //    startDelay: 1000,
- //    loop: false
- //    });
+	var typed = new Typed('.gT', {
+		stringsElement:'.me',
+    typeSpeed:0,
+    startDelay: 1000,
+    loop: false
+    });
     $(".js-contactIco").on("click", function(e){
 		$(".fixedBlock").fadeIn(500);
 	});
