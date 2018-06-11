@@ -449,3 +449,4 @@
 [0523/174724.427:ERROR:process_reader_win.cc(242)] ReadMemory at 0x348000 of 98304 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [0523/174724.427:ERROR:crash_report_exception_handler.cc(116)] WriteEverything failed
 [0523/174724.431:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
+[0611/174233.535:ERROR:persistent_memory_allocator.cc(845)] Corruption detected in shared-memory segment.

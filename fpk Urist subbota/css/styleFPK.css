@@ -2302,6 +2302,14 @@ thead tr th{
 	width: 100%;
 	position: relative;
 }
+.review__text p{
+	height: 175px;
+	display: inline-block;
+}
+.avatar__name,.avatar__info{
+	display: block;
+
+}
 .animationTopLabel label {
 	display: block;
 	width: 344px;
