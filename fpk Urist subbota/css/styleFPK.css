@@ -497,7 +497,7 @@ a{
 }
 
 .numPos{
-	right: 0;
+	right: -15px;
     bottom: 0px;
 }
 .item__text{
