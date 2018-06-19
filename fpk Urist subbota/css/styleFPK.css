@@ -508,7 +508,7 @@ a{
 	padding: 37px 36px;
 	position: relative;
 	z-index: 9;
-	line-height: 1.5;
+	line-height: 1.2;
 	letter-spacing: 0.5px;
 	font-weight: 300;
 }
@@ -547,7 +547,7 @@ a{
 .midBlock__item{
 	max-width: 424px;
 	width: 100%;
-	min-height: 460px;
+	min-height: 437px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #fff;
@@ -610,6 +610,7 @@ a{
 .servicesList_padL{
 	margin-top: -23px;
 	padding-left: 97px;
+	padding-right: 45px;
 }
 .greyLine{
 	border-right: 2px solid #ebebeb;
@@ -630,7 +631,7 @@ a{
 .listItem {
 	padding-left: 30px;
 	font-size: 1rem;
-	line-height: 2.188;
+	line-height: 1.5;
 	letter-spacing: 0.5px;
 	display: flex;
 	align-items: center;
@@ -2415,14 +2416,7 @@ thead tr th{
 	}
 }
 @media(max-width: 1773px){
-	.slick-prev{
-		left: 3%;
-		z-index: 999;
-	}
-	.slick-next{
-		right: 3%;
-		z-index: 999;
-	}
+	
 	.additional {
 		width: 100%;
 		min-height: 963px;
@@ -2437,6 +2431,14 @@ thead tr th{
     overflow: hidden;
 }
 }
+@media(max-width:1748px){
+	.slider__item{
+		padding: 40px 20px;
+	}
+	html{
+		font-size: 80%;
+	}
+}
 @media(min-width: 1450px){
 	.container {
 		max-width: 1356px;
@@ -2444,16 +2446,12 @@ thead tr th{
 
 }
 @media(max-width: 1450px){
-	html{
-		font-size: 80%;
-	}
+	
 	.additional {
 		background:url(../img/desL-min.png) no-repeat 0% 63%, url(../img/desR-min.png) no-repeat 100% 72%;
 		background-color: #ebebeb;
 	}
-	.slider__item{
-		padding: 40px 20px;
-	}
+	
 	.slick-prev{
 		left: 3%;
 		z-index: 999;
@@ -2463,7 +2461,7 @@ thead tr th{
 		z-index: 999;
 	}
 	.midBlock__item {
-		padding: 35px 40px;
+		padding: 35px 50px;
 	}
 	.greyBlock {
 		min-height: 844px;
@@ -2488,8 +2486,20 @@ thead tr th{
 	.miliSilver {
 		position: absolute;
 		top: 90%;
+		padding-top: 15px;
 	}
-
+	.slick-prev{
+		left: 3%;
+		z-index: 999;
+	}
+	.slick-next{
+		right: 3%;
+		z-index: 999;
+	}
+.servicesList_padL {
+    padding-left: 97px;
+    padding-right: 0;
+}
 	.phone_header{
 		transform:scale(0.5);
 		left: -59px;
@@ -2716,6 +2726,7 @@ thead tr th{
 	}
 	.servicesList_padL {
 		padding-left: 0;
+		padding-right: 0;
 	}
 	.servicesList_padR {
 		padding-left: 0;

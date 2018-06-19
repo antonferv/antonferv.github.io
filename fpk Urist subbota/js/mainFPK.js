@@ -57,7 +57,7 @@ $('.btn_orange ').click(function (e) {
     if (width < 993){
       $(".JSChecknp").removeClass("np");
       $(".JSChecknpr").removeClass("npr");
-
+      $(".jsmdContentCenter").removeClass("justify-content-between").addClass("justify-content-center");
       $(".jsPositionBlockH3").each(function(){
         $(this).parent(".servicesList_padR").parent(".servicesBlock").find(".servicesList_padL").prepend($(this));
       });
@@ -69,6 +69,7 @@ $('.btn_orange ').click(function (e) {
 
       $(".JSChecknp").addClass("np");
       $(".JSChecknpr").addClass("npr");
+      $(".jsmdContentCenter").removeClass("justify-content-center").addClass("justify-content-between");
 
       $(".jsPositionBlockH3").each(function(){
         $(this).parent(".servicesList_padL").parent(".servicesBlock").find(".servicesList_padR").prepend($(this));
@@ -125,6 +126,14 @@ $(".regular").slick({
  responsive: [
  {
   breakpoint: 1770,
+  settings: {
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   dots: true
+ }
+},
+{
+  breakpoint: 1390,
   settings: {
    slidesToShow: 2,
    slidesToScroll: 1,
