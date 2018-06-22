@@ -13,10 +13,84 @@ $(function(){
   });
 });
 $(document).on('ready', function() {
-$('.btn_orange ').click(function (e) {
-    e.preventDefault()
-    /*dome code here*/       
-});
+  $('.btn_orange').click(function (e) {
+    e.preventDefault();       
+  });
+  (function($){
+    var Polyfill = function(userOptions){
+      this.options = $.extend({}, Polyfill.defaultOptions, userOptions);
+
+      this.isEnabled = false;
+
+      if(this.options.forcePolyfill || !this.supportsPointerEvents()){
+        this.registerEvents();
+        this.isEnabled = true;
+      }
+    };
+    Polyfill.defaultOptions = {
+      forcePolyfill: false,
+      selector: '*',
+      listenOn: ['click', 'dblclick', 'mousedown', 'mouseup'],
+      pointerEventsNoneClass: null,
+      pointerEventsAllClass: null,
+      eventNamespace: 'pointer-events-polyfill'
+    };
+    Polyfill.prototype.registerEvents = function(){
+      $(document).on(this.getEventNames(), this.options.selector, $.proxy(this.onElementClick, this));
+    };
+    Polyfill.prototype.getEventNames = function(){
+      var eventNamespace = this.options.eventNamespace ? '.' + this.options.eventNamespace : '';
+      return this.options.listenOn.join(eventNamespace + ' ') + eventNamespace;
+    };
+    Polyfill.prototype.supportsPointerEvents = function(){
+      var style = document.createElement('a').style;
+      style.cssText = 'pointer-events:auto';
+      return style.pointerEvents === 'auto';
+    };
+    Polyfill.prototype.isClickThrough = function($el){
+      var elPointerEventsCss = $el.css('pointer-events');
+      if($el.length === 0 || elPointerEventsCss === 'all' || $el.is(':root') || $el.hasClass(this.options.pointerEventsAllClass)){
+        return false;
+      }
+      if(elPointerEventsCss === 'none' || $el.hasClass(this.options.pointerEventsNoneClass) || this.isClickThrough($el.parent())){
+        return true;
+      }
+      return false;
+    };
+    Polyfill.prototype.onElementClick = function(e){
+      var $elOrg = $(e.target);
+
+      if(!this.isClickThrough($elOrg)){
+        return true;
+      }
+      $elOrg.hide();
+      var elBelow = document.elementFromPoint(e.clientX, e.clientY);
+      e.target = elBelow;
+      $(elBelow).trigger(e);
+      $elOrg.show();
+      return false;
+    };
+    Polyfill.prototype.destroy = function(){
+      $(document).off(this.getEventNames());
+      this.isEnabled = false;
+    };
+    window.pointerEventsPolyfill = function(userOptions){
+      return new Polyfill(userOptions);
+    };
+  })(jQuery);
+  $(function(){
+    window.pointerEventsPolyfill();
+  });
+
+  $(".__JsShowArticle").click(function(){
+    $(".popUp_article").addClass("popUp_articleAnimation");
+    $(".wrapperShell").addClass("wrapperShellFadeOut");
+  });
+  $(".closeIco").click(function(){
+    $(".popUp_article").removeClass("popUp_articleAnimation");
+    $(".wrapperShell").removeClass("wrapperShellFadeOut");
+  });
+
   $(".JsAutorization").click(function(){
     $(".popupIn").css({"display":"block"});
   });
@@ -30,7 +104,7 @@ $('.btn_orange ').click(function (e) {
   $(".closeIco").click(function(){
     $(".popUp_passRec").css({"display":"none"});
   });
-   $("._jsAcc").click(function(){
+  $("._jsAcc").click(function(){
     $(".popUp_App").css({"display":"block"});
   });
   $(".closeIco").click(function(){
@@ -93,25 +167,25 @@ function changeView(){
     $(".grey").css({"background-color":"#ebebeb"});
   });
   $(".masonry").click(function(){
-  $(".eventsBlock__item").css({"min-height":"380px","display":"block","align-items":"normal","justify-content":"normal","padding":"0 0"});
-   $(".b, .a").css({"position":"absolute","bottom":"10px","left":"10px"});
-   $(".hover").addClass("col-md-6 col-lg-3");
+    $(".eventsBlock__item").css({"min-height":"380px","display":"block","align-items":"normal","justify-content":"normal","padding":"0 0"});
+    $(".b, .a").css({"position":"absolute","bottom":"10px","left":"10px"});
+    $(".hover").addClass("col-md-6 col-lg-3");
     $(".event__date").css({"display":"block"});$(".event__img").css({"display":"block"});
     $(".event__date").css({"display":"block"});
-if(navigator.userAgent.search(/IE/)>0){
-$(".event__img").css({"display":"block"});
-   }
+    if(navigator.userAgent.search(/IE/)>0){
+      $(".event__img").css({"display":"block"});
+    }
     else{      
-$(".event__img").css({"display":"flex"});
-   };
+      $(".event__img").css({"display":"flex"});
+    };
     
-   $(".grey").css({"background-color":"#fff"});
-   
-   $(".event__img").each(function(){
-    $(this).parent(".eventsBlock__item").find(".b").appendTo($(this));
-    $(this).parent(".eventsBlock__item").find(".a").appendTo($(this));
+    $(".grey").css({"background-color":"#fff"});
+    
+    $(".event__img").each(function(){
+      $(this).parent(".eventsBlock__item").find(".b").appendTo($(this));
+      $(this).parent(".eventsBlock__item").find(".a").appendTo($(this));
+    });
   });
- });
 }
 changeView();
 $(".phone_header").click(function(){
