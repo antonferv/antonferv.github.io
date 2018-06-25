@@ -46,6 +46,49 @@ body{
 	margin: 0;
 	color: #000;
 }
+.sprite-1:before,
+.sprite-2:before,
+.sprite-3:before,
+.sprite-4:before,
+.sprite-5:before,
+.sprite-6:before{
+	content:"";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+    background-image: url(../img/spritesheet.png);
+    
+}
+.sprite-1:before{
+	width: 53px;
+	height: 112px;
+	background-position: -4px -4px;
+}
+.sprite-2:before{
+    width: 84px;
+    height: 113px;
+    background-position: -68px -5px;
+}
+.sprite-3:before{
+    width: 79px;
+    height: 115px;
+    background-position: -162px -5px;
+}
+.sprite-4:before{
+    width: 84px;
+    height: 120px;
+    background-position: -5px -130px;
+}
+.sprite-5:before{
+    width: 79px;
+    height: 115px;
+    background-position: -99px -130px;
+}
+.sprite-6:before{
+    width: 78px;
+    height: 116px;
+    background-position: -251px -5px;
+}
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	font-weight: normal;
@@ -861,7 +904,7 @@ a{
 }
 .startWork{
 	width: 100%;
-	height: 715px;
+	height: 695px;
 	position: relative;
 	padding-top: 200px;
 	text-align: center;
@@ -917,7 +960,7 @@ a{
 	font-family: 'Helvetica Neue Light';
 	line-height: 1.2;
 	position: relative;
-	margin-top: 225px;
+	margin-top: 238px;
 }
 .sliderBlock{
 	width: 100%;
@@ -2468,9 +2511,14 @@ a{
 		.textureBlock:before {
 			bottom: 45px;
 		}
+		.textureBlock__span{
+			margin-top: 250px;
+		}
 	}
 	@media(max-width: 1773px){
-
+		.textureBlock__span{
+			margin-top: 272px;
+		}
 	/*.additional {
 		width: 100%;
 		min-height: 963px;
@@ -2525,6 +2573,7 @@ a{
 		.greyBlock {
 			min-height: 844px;
 			padding-top: 150px;
+			padding-bottom: 25px;
 		}
 		.event__img {
 			width: 100%;
@@ -2548,7 +2597,7 @@ a{
 			padding-top: 15px;
 		}
 		.textureBlock__span {
-			margin-top: 202px;
+			margin-top: 175px;
 		}
 		.slick-prev{
 			left: 3%;
