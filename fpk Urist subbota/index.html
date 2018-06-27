@@ -19,163 +19,161 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
       <!--[if lte IE 10]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
-      <body>
-        <!-- Восстановление пароля -->
-        <div class="popUp popUp_passRec">
-          <div class="container">
-            <div class="positionPopUp">
-              <div class="popUpFlex">
-                <i class="closeIco"></i>
-                <div class="popUp__img">
-                  <img src="img/shield.png" alt="regImg">
-                  <h3 class="popUp__h3">Восстановление пароля</h3>
-                  <span>Введите E-mail или телефон, который вы указали при регистрации, на него будет выслан новый пароль.</span>
-                </div>
-                <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail" name="E-mailRec">
-                <input type="text" class="popUp__input popUp__input_mw" placeholder="Телефон" name="PhoneRec">
-                <input type="button" class="popUp__btn bl" value="Сбросить пароль">
+    </head>
+    <body>
+      <!-- Восстановление пароля -->
+      <div class="popUp popUp_passRec">
+        <div class="container">
+          <div class="positionPopUp">
+            <div class="popUpFlex">
+              <i class="closeIco"></i>
+              <div class="popUp__img">
+                <img src="img/shield.png" alt="regImg">
+                <h3 class="popUp__h3">Восстановление пароля</h3>
+                <span>Введите E-mail или телефон, который вы указали при регистрации, на него будет выслан новый пароль.</span>
               </div>
+              <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail" name="E-mailRec">
+              <input type="text" class="popUp__input popUp__input_mw" placeholder="Телефон" name="PhoneRec">
+              <input type="button" class="popUp__btn bl" value="Сбросить пароль">
             </div>
           </div>
         </div>
-        <!-- Восстановление пароля -->
-        <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
-        <div class="popUp _RegPopUp">
-          <div class="container">
-            <div class="positionPopUp">
-              <div class="popUpFlex">
-                <i class="closeIco"></i>
-                <div class="popUp__img">
-                  <img src="img/reg.png" alt="regImg">
-                  <h3 class="popUp__h3">Регистрация</h3>
+      </div>
+      <!-- Восстановление пароля -->
+      <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
+      <div class="popUp _RegPopUp">
+        <div class="container">
+          <div class="positionPopUp">
+            <div class="popUpFlex">
+              <i class="closeIco"></i>
+              <div class="popUp__img">
+                <img src="img/reg.png" alt="regImg">
+                <h3 class="popUp__h3">Регистрация</h3>
+              </div>
+              <div class="flexRow">
+                <input type="text" class="popUp__input popUp__input_Reg" placeholder="Фамилия" name="patronomic">
+                <div class="w5"></div>
+                <input type="text" class="popUp__input popUp__input_Reg" placeholder="Имя" name="nameUser">
+              </div>
+              <div class="flexRow">
+                <div class="animationTopLabel">
+                  <input type="text" class="popUp__input popUp__input_Reg JSAnimPlaceholder" id="NameOrganization">
+                  <label for="NameOrganization">
+                    <span>Название организации</span>
+                  </label>
                 </div>
-                <div class="flexRow">
-                  <input type="text" class="popUp__input popUp__input_Reg" placeholder="Фамилия" name="patronomic">
-                  <div class="w5"></div>
-                  <input type="text" class="popUp__input popUp__input_Reg" placeholder="Имя" name="nameUser">
-                </div>
-                <div class="flexRow">
-                  <div class="animationTopLabel">
-                    <input type="text" class="popUp__input popUp__input_Reg JSAnimPlaceholder" id="NameOrganization">
-                    <label for="NameOrganization">
-                      <span>Название организации</span>
-                    </label>
-                  </div>
-
-
-                  <div class="w5"></div>
-                  <div class="shrink">
-                    <div class="shellFileFoto">
-                      <div class="selectbutton__Foto">
-                        <div class="flexContainer">
-                          <div class="loadImageIco">
-                            <img src="img/reg.png" alt="ava">   
-                          </div>
-                          <p>Загрузить фото</p>
+                <div class="w5"></div>
+                <div class="shrink">
+                  <div class="shellFileFoto">
+                    <div class="selectbutton__Foto">
+                      <div class="flexContainer">
+                        <div class="loadImageIco">
+                          <img src="img/reg.png" alt="ava">   
                         </div>
+                        <p>Загрузить фото</p>
                       </div>
-                      <input id="uploadFoto" type="file" name="uploadFoto" class="fileFoto">
                     </div>
+                    <input id="uploadFoto" type="file" name="uploadFoto" class="fileFoto">
                   </div>
                 </div>
-                <div class="flexRow">
-                  <input type="text" class="popUp__input popUp__input_Reg" placeholder="Телефон">
-                  <div class="w5"></div>
-                  <input type="text" class="popUp__input popUp__input_Reg" placeholder="Сайт">
+              </div>
+              <div class="flexRow">
+                <input type="text" class="popUp__input popUp__input_Reg" placeholder="Телефон">
+                <div class="w5"></div>
+                <input type="text" class="popUp__input popUp__input_Reg" placeholder="Сайт">
+              </div>
+              <input type="button" class="popUp__btn" value="Регистрация">
+              <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="privacy_policy.html">Политика обработки и хранения персональных данных</a></small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
+      <!-- IN POPUP -->
+      <div class="popUp popupIn">
+        <div class="container">
+          <div class="positionPopUp">
+            <div class="popUpFlex">
+              <i class="closeIco"></i>
+              <div class="popUp__img">
+                <img src="img/reg.png" alt="regImg">
+                <h3 class="popUp__h3">Вход</h3>
+              </div>
+              <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail">
+              <input type="text" class="popUp__input popUp__input_mw" placeholder="Пароль">
+              <input type="button" class="popUp__btn" value="Войти">
+              <a href="#" class="popUp__link _Rec">Забыли пароль?</a>
+              <a href="#" class="popUp__link _Reg">Регистрация</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IN POPUP -->
+      <!-- ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ -->
+      <div class="popUp popUp_App">
+        <div class="container">
+          <div class="positionPopUp">
+            <div class="popUpFlex">
+              <i class="closeIco"></i>
+              <div class="popUp__img">
+                <img src="img/pen90.png" alt="regImg">
+                <h3 class="popUp__h3">Заявка на оказание услуг</h3>
+              </div>
+              <input type="text" class="popUp__input popUp__input_App" placeholder="Ф.И.О." name="FIO">
+              <input type="text" class="popUp__input popUp__input_App" placeholder="E-mail" name="EmailApp">
+              <textarea name="sendmailApp" class="textareaApp" ></textarea>
+              <div class="file">
+                <div class="fileform">
+                  <div class="selectbutton__App">Прикрепить файл</div>
+                  <input id="upload" type="file" name="uploadAcc" class="fileAcc">
                 </div>
-                <input type="button" class="popUp__btn" value="Регистрация">
+                <p class="fileAcc__text">pdf, doc, jpeg</p>
+              </div>
+              <input type="button" class="popUp__btn popUp__btn_orange" value="Отправить">
+              <div class="checkboxWrapper">
+                <div class="shellCheckbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
                 <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="privacy_policy.html">Политика обработки и хранения персональных данных</a></small></span>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
-        <!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP --><!-- REGISTRATION POPUP -->
-        <!-- IN POPUP -->
-        <div class="popUp popupIn">
-          <div class="container">
-            <div class="positionPopUp">
-              <div class="popUpFlex">
-                <i class="closeIco"></i>
-                <div class="popUp__img">
-                  <img src="img/reg.png" alt="regImg">
-                  <h3 class="popUp__h3">Вход</h3>
-                </div>
-                <input type="text" class="popUp__input popUp__input_mw" placeholder="E-mail">
-                <input type="text" class="popUp__input popUp__input_mw" placeholder="Пароль">
-                <input type="button" class="popUp__btn" value="Войти">
-                <a href="#" class="popUp__link _Rec">Забыли пароль?</a>
-                <a href="#" class="popUp__link _Reg">Регистрация</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- IN POPUP -->
-        <!-- ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ -->
-        <div class="popUp popUp_App">
-          <div class="container">
-            <div class="positionPopUp">
-              <div class="popUpFlex">
-                <i class="closeIco"></i>
-                <div class="popUp__img">
-                  <img src="img/pen90.png" alt="regImg">
-                  <h3 class="popUp__h3">Заявка на оказание услуг</h3>
-                </div>
-                <input type="text" class="popUp__input popUp__input_App" placeholder="Ф.И.О." name="FIO">
-                <input type="text" class="popUp__input popUp__input_App" placeholder="E-mail" name="EmailApp">
-                <textarea name="sendmailApp" class="textareaApp" ></textarea>
-                <div class="file">
-                  <div class="fileform">
-                    <div class="selectbutton__App">Прикрепить файл</div>
-                    <input id="upload" type="file" placeholder="Прикрепить файл" name="uploadAcc" class="fileAcc">
-                  </div>
-                  <p class="fileAcc__text">pdf, doc, jpeg</p>
-                </div>
-                <input type="button" class="popUp__btn popUp__btn_orange" value="Отправить">
-                <div class="checkboxWrapper">
-                  <div class="shellCheckbox">
-                    <label class="checkbox">
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <span class="checkbox__span">Я даю согласие на обработку своих персональных данных<br><small><a href="privacy_policy.html">Политика обработки и хранения персональных данных</a></small></span>
-                </div> 
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ -->
-        <!-- headerMain -->
-        <div class="wrapperShell">
-          <header>
-            <div class="topHeadFixed">
-              <div class="container">
-               <div class="row">          
-                <div class="col-12 topHead">           
-                 <div class="topHead__Left">
-                  <ul class="topHead__logo">
-                   <li><a href="index.html" target="_parent"><img src="img/logo-min.png" alt="logo"></a></li>
-                   <li><a href="uslugi.html" target="_parent">Услуги</a></li>
-                   <li><a href="articles.html" target="_parent">События</a></li>
-                   <li><span><b>+7 (343) 379-58-79</b></span></li>
-                   <li><a href="mailto:info@fpkurist.ru" target="_parent"><b>info@fpkurist.ru</b></a><a class="topHead__link"></a></li>
-                 </ul>
-               </div>
-               <div class="topHead__Right">
-                <a href="#" class="btn_In btn JsAutorization">Войти</a>
-                <i class="phone_header"></i>
-                <div class="hint">
-                  <span><a href="tel:+7 (343) 379-58-79" class="phoneMgo" >+7 (343) 379-58-79</a></span>
-                </div>
+      </div>
+      <!-- ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ -->
+      <!-- headerMain -->
+      <div class="wrapperShell">
+        <header>
+          <div class="topHeadFixed">
+            <div class="container">
+             <div class="row">          
+              <div class="col-12 topHead">           
+               <div class="topHead__Left">
+                <ul class="topHead__logo">
+                 <li><a href="index.html" target="_parent"><img src="img/logo-min.png" alt="logo"></a></li>
+                 <li><a href="uslugi.html" target="_parent">Услуги</a></li>
+                 <li><a href="articles.html" target="_parent">События</a></li>
+                 <li><span><b>+7 (343) 379-58-79</b></span></li>
+                 <li><a href="mailto:info@fpkurist.ru" target="_parent"><b>info@fpkurist.ru</b></a><a class="topHead__link"></a></li>
+               </ul>
+             </div>
+             <div class="topHead__Right">
+              <a href="#" class="btn_In btn JsAutorization">Войти</a>
+              <i class="phone_header"></i>
+              <div class="hint">
+                <span><a href="tel:+7(343)379-58-79" class="phoneMgo" >+7 (343) 379-58-79</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="bgHeader_white">
-     </div>
-     <div class="header">
+    </div>
+    <div class="bgHeader_white">
+    </div>
+    <div class="header">
       <div class="container">
         <div class="row">
           <div class="col-12 orderBlock">
@@ -185,11 +183,10 @@
        </div>
      </div>
      <div class="svgBot">
-      <svg version="1.1" class="headersvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-      viewBox="0 0 2248 121" preserveAspectRatio="xMinYMin meet">
-      <polygon fill="#ffffff" points="0,83 2248,30.8 2248,121 0,121 "/>
-    </svg>
-  </div>
+       <svg version="1.1" class="headersvg" viewBox="0 0 2248 121" preserveAspectRatio="none">
+        <polygon fill="#ffffff" points="0,83 2248,30.8 2248,121 0,121 "></polygon>
+      </svg>
+    </div>
 </div>
 </header><!-- headerMain -->
 <section class="blockAbout"><!-- section -->
@@ -239,7 +236,7 @@
     </div>
     <div class="b5 col-6 col-sm-4 col-md-4 col-lg-2 order-3 order-md-5">
       <div class="flexBlock flexBlock_center">
-        <div class="counter__number _s" data-num="25">25</div><span>млн.</span>
+        <div class="counter__number _s" data-num="25">25</div><span>&nbsp;млн.</span>
       </div>
       <div class="counter__text">сумма страхования<br> услуг компании</div>
     </div>
@@ -249,14 +246,15 @@
 </section>
 <!-- section -->
 <section class="greyBlock vertical-center">
-  <svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
-  <polygon fill="#FFFFFF" points="2248,121 0,0 2248,0 " class="svgShape1"/>
-</svg>
+<div class="svgTop">
+  <svg version="1.1" class="svgShape1" viewBox="0 0 2248 121" preserveAspectRatio="none">
+    <polygon fill="#FFFFFF" points="2248,121 0,0 2248,0 " class="svgShape1"></polygon>
+  </svg>
+</div>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12">
-     <h2 align="center" class="item__H2">Выступим в роли <strong>советника/консультанта/<br>
+     <h2 class="item__H2">Выступим в роли <strong>советника/консультанта/<br>
        наблюдателя</strong> для соблюдения Ваших интересов</h2>
      </div>		    	
      <div class="col-12 col-sm-6 col-lg-4">
@@ -274,19 +272,19 @@
  <div class="col-12 col-sm-6 col-lg-4">
   <div class="greyBlock__item item sprite-3">
    <h3 class="item__text"><b>Выявим</b> риски и<br> проверим на соблюдение<br> требований закона</h3>
-  
+   
  </div>
 </div>
 <div class="col-12 col-sm-6 col-lg-4">
   <div class="greyBlock__item item sprite-4">
    <h3 class="item__text"><b>Проконсультируем,</b><br> разъясним и подготовим<br> документы </h3>
-  
+   
  </div>
 </div>
 <div class="col-12 col-sm-6 col-lg-4">
   <div class="greyBlock__item item sprite-5">
    <h3 class="item__text"><b>Оперативно предоставим</b><br> необходимую в правовом<br> поле информацию </h3>
-  
+   
  </div>
 </div>
 <div class="col-12 col-sm-6 col-lg-4">
@@ -300,10 +298,12 @@
 </section>
 <!-- section -->
 <section class="midBlock vertical-center">
-  <svg version="1.1" class="svgShape2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 2248 300" enable-background="new 0 0 2248 300" xml:space="preserve">
-  <polygon fill="#E0E1E2" points="0,300 2248,150 2248,0 0,0 "/>
-</svg>
+  <div class="svgTop2">
+    <svg version="1.1" class="svgShape2" viewBox="0 0 2248 300" preserveAspectRatio="none">
+      <polygon fill="#E0E1E2" points="0,300 2248,150 2248,0 0,0 "></polygon>
+    </svg>
+  </div>
+  
 <div class="blueShape"></div>
 <div class="cup"></div>
 <div class="container">
@@ -472,14 +472,16 @@
 </section>
 <!-- section -->
 <section class="textureBlock">
-  <svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
-  <polygon fill="#ebebeb" points="0,52.6 2248,121 2248,0 0,0 "/>
-</svg>
-<svg version="1.1" class="svgShape3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
-<polygon fill="#ebebeb" points="0,68.4 2248,0 2248,121 0,121 "/>
-</svg>
+  <div class="svgTop">
+    <svg version="1.1" class="svgShape1" viewBox="0 0 2248 121" preserveAspectRatio="none">
+      <polygon fill="#ebebeb" points="0,52.6 2248,121 2248,0 0,0 "/>
+    </svg>
+  </div>
+  <div class="svgBot2">
+    <svg version="1.1" class="svgShape3" viewBox="0 0 2248 121" preserveAspectRatio="none">
+      <polygon fill="#ebebeb" points="0,68.4 2248,0 2248,121 0,121 "/>
+    </svg>
+  </div>
 <div class="container">
  <div class="row">
    <div class="col-12 startWork">
@@ -495,7 +497,7 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 </section>
 <!-- section -->
 <section class="sliderBlock">
-<div class="sliderBlockBgLeft"></div>
+  <div class="sliderBlockBgLeft"></div>
   <div class="regular slider">
    <div class="slider__item">
     <div class="slider__review review">
@@ -667,10 +669,11 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 </div>
 </section>
 <section class="mapBlock">
-  <svg version="1.1" class="svgShape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve">
-  <polygon fill="#ebebeb" points="2248,121 0,0 2248,0 "/>
-</svg>
+  <div class="svgTop">
+    <svg version="1.1" class="svgShape1" viewBox="0 0 2248 121" preserveAspectRatio="none">
+      <polygon fill="#ebebeb" points="2248,121 0,0 2248,0 "></polygon>
+    </svg>
+  </div>
 <div class="blockPosition">
   <div class="mapBlock_ins">
     <div class="mapBlock_insL">
@@ -693,11 +696,11 @@ viewBox="0 0 2248 121" enable-background="new 0 0 2248 121" xml:space="preserve"
 <div class="googleMap">
   <div  id="google-map"></div>
 </div>
-
-<svg version="1.1" class="svgBlack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 2248 320" enable-background="new 0 0 2248 320" xml:space="preserve">
-<polygon points="2248,320 2248,131.1 0,0 0,320 "/>
-</svg>
+<div class="svgBot3">
+  <svg version="1.1" class="svgBlack" viewBox="0 0 2248 320" preserveAspectRatio="none">
+    <polygon points="2248,320 2248,131.1 0,0 0,320 "></polygon>
+  </svg>
+</div>
 </section><!-- section end -->
 <!-- footer main-->
 <footer>
@@ -711,44 +714,44 @@ viewBox="0 0 2248 320" enable-background="new 0 0 2248 320" xml:space="preserve"
             <li><span class="hnb">Режим работы</span> <br>9.00 - 18.00</li>
             <li><span class="hnb">Телефон</span><br>+7 (343) 379-58-79</li>
             <li><span class="hnb">E-mail</span><br>info@fpkurist.ru</li>
-              <li>
-                <ul class="footer__social">
-                  <li><a href="https://www.instagram.com/fpkurist/" target="_blank" class="footer__link"><i class="ico ico_insta"></i></a></li>
-                  <li><a href="https://www.facebook.com/fpkurist/" target="_blank" class="footer__link"><i class="ico ico_fb"></i></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-4 pbb">
-            <ul class="footer__requisites">
-              <li><h5>Реквизиты</h5></li>
-              <li><span class="hnb">Адрес:</span> 620075, г. Екатеринбург,<br>ул. Малышева, д. 51, оф. 4/16 </li>
-              <li><span class="hnb">ОГРН</span>1156658084604</li>
-              <li><span class="hnb">ИНН/КПП:</span> 6685 102 160/668501001</li>
-              <li><span class="hnb">p/c:</span> 10702810500090002998</li>
-              <li><span class="hnb">k/c:</span> 30101810000000000925<br>в Уральский Филиал ПАО "МТС-Банк"</li>
-              <li><span class="hnb">БИК:</span> 046577925</li>
-              <li><span class="hnb">Директор:</span> Степанова Татьяна Петровна</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-4 pbb">
-            <ul class="footer__vacancies">
-              <li><h5>Вакансии</h5></li>
-              <li><a href="vakansiya.html" target="_parent">Бухгалтер</a></li>
-              <li><a href="vakansiya.html" target="_parent">Дизайнер</a></li>
-              <li><a href="vakansiya.html" target="_parent">Маркетолог</a></li>
-              <li><a href="vakansiya.html" target="_parent">Юрист</a></li>
-            </ul>
-          </div>
+            <li>
+              <ul class="footer__social">
+                <li><a href="https://www.instagram.com/fpkurist/" target="_blank" class="footer__link"><i class="ico ico_insta"></i></a></li>
+                <li><a href="https://www.facebook.com/fpkurist/" target="_blank" class="footer__link"><i class="ico ico_fb"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 pbb">
+          <ul class="footer__requisites">
+            <li><h5>Реквизиты</h5></li>
+            <li><span class="hnb">Адрес:</span> 620075, г. Екатеринбург,<br>ул. Малышева, д. 51, оф. 4/16 </li>
+            <li><span class="hnb">ОГРН</span>1156658084604</li>
+            <li><span class="hnb">ИНН/КПП:</span> 6685 102 160/668501001</li>
+            <li><span class="hnb">p/c:</span> 10702810500090002998</li>
+            <li><span class="hnb">k/c:</span> 30101810000000000925<br>в Уральский Филиал ПАО "МТС-Банк"</li>
+            <li><span class="hnb">БИК:</span> 046577925</li>
+            <li><span class="hnb">Директор:</span> Степанова Татьяна Петровна</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 pbb">
+          <ul class="footer__vacancies">
+            <li><h5>Вакансии</h5></li>
+            <li><a href="vakansiya_buhgalter.html" target="_parent">Бухгалтер</a></li>
+            <li><a href="vakansiya_disayner.html" target="_parent">Дизайнер</a></li>
+            <li><a href="vakansiya_marketolog.html" target="_parent">Маркетолог</a></li>
+            <li><a href="vakansiya_jurist.html" target="_parent">Юрист</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script>
-  <script src="slick/slick.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/mainFPK.js"></script>
-  <script src="js/googleMap.js"></script>
+    </div>
+  </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-oSZEftDCsORzL_DZbseRRr87w4Y6dc"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/mainFPK.js"></script>
+<script src="js/googleMap.js"></script>
 </body>
 </html>
