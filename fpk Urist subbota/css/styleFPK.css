@@ -47,7 +47,6 @@ body{
 	color: #000;
 }
 section{margin:0;}
-.JsAutorization{display: none;}
 .sprite-1:before,
 .sprite-2:before,
 .sprite-3:before,
@@ -1986,7 +1985,7 @@ a{
 	}
 	.popUp_passRec{
 		display: none;
-		z-index: 10000;
+		z-index: 100000;
 	}
 	.popUp_App{
 		display: none;
