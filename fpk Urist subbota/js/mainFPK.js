@@ -191,6 +191,7 @@ changeView();
 $(".phone_header").click(function(){
   $(".hint").toggle();
 });
+ 
 $(".regular").slick({
  dots: true,
  infinite: true,

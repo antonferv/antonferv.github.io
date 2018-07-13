@@ -1,0 +1,6 @@
+verticalPreloadImage(350x760)
+horizontalTwoPreloadImage(325x325)
+horizontalBottomPreloadImage(680x350)
+
+
+cropForHeader 1920-800
