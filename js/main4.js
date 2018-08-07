@@ -8,7 +8,7 @@
 				showSeconds: false,
 				showMinuts:false,
 			});
-			var target="June 25 2018 20:22:48";
+			var target="September 25 2018 20:22:48";
 			var date = new Date(target);
 			var currDate=Date.now();
 			var rem= date-currDate;
