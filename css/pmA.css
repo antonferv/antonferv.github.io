@@ -179,7 +179,9 @@ img{
 .scrollImage, 
 .scrollImage1, 
 .scrollImage2,
-.scrollImage3
+.scrollImage3,
+.scrollImage5,
+.scrollImage6
 {
 	position: relative;
 	top: 0;
