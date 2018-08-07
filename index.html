@@ -26,12 +26,11 @@
 			</nav>
 		</div>
 		<div class="meST3">
-			<span class="gT"></span>
-		</div>
-		<div class="me">
+			<span class="gT">
+<div class="me">
 		<span class="treadText">
-        <span class="me__Comments">      /*Привет! Меня зовут Антон Ферв.
-        Я специализируюсь на Frontend кодинге ( HTML, JS, CSS ) и Wordpress( Woocommerce )*/</span>
+    <span class="me__Comments">/*Привет! Меня зовут Антон Ферв.
+    Я специализируюсь на Frontend кодинге ( HTML, JS, CSS ) и Wordpress( Woocommerce )*/</span>
 		<span class="me__likeCSSMe">
  1    <span class="me__green">.умения .фронтенд </span><span class="me__white">{</span>
  2           <span class="me__blue">языки разметки<span class="me__white">:</span> XML<span class="me__white">,</span> HTML<span class="me__purple">5</span><span class="me__white">,</span> CSS<span class="me__purple">3</span><span class="me__white">,</span> SVG<span class="me__white">;</span></span>
@@ -59,11 +58,14 @@
  24 <span class="me__blue">                  гибкая<span class="me__white">,</span></span>
  25 <span class="me__blue">        PixelPerfect<span class="me__white">:</span> true<span class="me__white">;</span></span>
  26 <span class="me__blue">        семантичная<span class="me__white">:</span> true<span class="me__white">;</span></span>
- 27 <span class="me__blue">        валидная<span class="me__white">:</span> true<span class="me__white">;</span></span>
+ 27 <span class="me__white">  |</span> <span class="me__blue">    валидная<span class="me__white">:</span> true<span class="me__white">;</span></span>
  28 <span class="me__blue">        кроссбраузерная<span class="me__white">:</span> true<span class="me__white">;</span></span>
  29<span class="me__white">   }</span></span>
  30   </span></span>
+		</div>				
+			</span>
 		</div>
+		
 		<span class="typed-cursor">|</span>
 	</header>
 	<aside>
@@ -103,7 +105,7 @@
 				<div class="portfolioItem">
 					<div class="portfolioItem__img">
 						<a href="PR-DEV0.0/index.html">
-							<img src="img/p3.jpg" alt="p3" class="scrollImage6">
+							<img src="img/p7.jpg" alt="p3" class="scrollImage6">
 						</a>
 					</div>
 					<div class="portfolioItem__detailed">
@@ -114,7 +116,7 @@
 				<div class="portfolioItem">
 					<div class="portfolioItem__img">
 						<a href="project DisA/index.html">
-							<img src="img/p3.jpg" alt="p3" class="scrollImage5">
+							<img src="img/p6.jpg" alt="p3" class="scrollImage5">
 						</a>
 					</div>
 					<div class="portfolioItem__detailed">
@@ -258,12 +260,12 @@ $(document).ready(function(){
 		top=$(id).offset().top-45;
 		$("body,html").animate({scrollTop:top},700);
 	});
-	var typed = new Typed('.gT', {
-		stringsElement:'.me',
-    typeSpeed:0,
-    startDelay: 1000,
-    loop: false
-    });
+	// var typed = new Typed('.gT', {
+	// 	stringsElement:'.me',
+ //    typeSpeed:0,
+ //    startDelay: 1000,
+ //    loop: false
+ //    });
     $(".js-contactIco").on("click", function(e){
 		$(".fixedBlock").fadeIn(500);
 	});

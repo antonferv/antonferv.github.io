@@ -91,14 +91,13 @@ a:hover{
 	cursor: pointer;
 }
 .me{
-	padding-top: 4em;
-	padding-left: 2em;
+	padding-left: 1em;
 }
 .me span{
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 .me p{
-	font-size: 1.15em;
+	font-size: 1.15rem;
 	line-height: 2;
 	font-style: italic;
 }
@@ -179,9 +178,7 @@ img{
 .scrollImage, 
 .scrollImage1, 
 .scrollImage2,
-.scrollImage3,
-.scrollImage5,
-.scrollImage6
+.scrollImage3
 {
 	position: relative;
 	top: 0;
@@ -191,13 +188,23 @@ img{
 	transition: top .9s ease-in;
 	cursor: pointer;
 }
-.scrollImage4{
+.scrollImage4,
+.scrollImage5{
 	position: relative;
 	top: 0;
 	-webkit-transition: top 2s ease-in;
 	-o-transition: top 2s ease-in;
 	-moz-transition: top 2s ease-in;
 	transition: top 2s ease-in;
+	cursor: pointer;
+}
+.scrollImage6{
+	position: relative;
+	top: 0;
+	-webkit-transition: top 3s ease-in;
+	-o-transition: top 3s ease-in;
+	-moz-transition: top 3s ease-in;
+	transition: top 3s ease-in;
 	cursor: pointer;
 }
 .scrollImage:hover{
@@ -214,6 +221,12 @@ img{
 }
 .scrollImage4:hover{
 	top: -1095px;
+}
+.scrollImage5:hover{
+	top: -920px;
+}
+.scrollImage6:hover{
+	top: -1734px;
 }
 .portfolioItem__detailed{
 	width: -webkit-calc(100% - 5px);
@@ -426,7 +439,7 @@ img{
 	margin-right: 0.5rem;
 }
 .me{
-	display: none;
+	display: block;
 }
 .meST3{
 	background: url(../img/st3Back.jpg) no-repeat 0 0;
@@ -435,8 +448,8 @@ img{
 	background-size: cover;
 	width: 100%;
 	min-height: 100px;
-	padding-top: 55px;
-	padding-bottom: 113px;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
 .gT{
 	white-space: pre;
